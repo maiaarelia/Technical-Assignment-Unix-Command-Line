@@ -1,0 +1,83 @@
+Technical Assignment Arelia Maia Ashary
+Unix Command Line 
+
+1. membuat sebuah folder kosong dengan nama-mu sendiri
+   => mkdir arelia
+
+2. didalam folder tersebut buatlah
+	- folder sekolah 
+	- folder kerja
+   => cd D:/joyful/unixcommandline/arelia
+   => mkdir sekolah
+   => mkdir kerja
+
+3. masuk ke dalam folder sekolah
+   => cd D:/joyful/unixcommandline/arelia/sekolah
+   
+   - buat file dengan nama ijazah.txt, yang mana file tersebut akan memiliki teks seperti:
+	Perkenalkan namaku $NAMA
+	Aku berasal dari $DAERAH
+	Salam Kenal :D
+
+	$NAMA ⇒ diganti dengan namamu sendiri
+	$DAERAH ⇒ diganti dengan daerah asalmu sendiri
+
+	=> touch ijazah.txt
+	=> nano ijazah.txt
+		Perkenalkan namaku Arelia
+		Aku berasal dari Surakarta
+		Salam Kenal :D
+		^X, Y 
+
+    - tampilkan isi dari file tersebut menggunakan CLI command
+	  => cat ijazah.txt
+
+    - kemudian buat 1 file lagi dengan nama portfolio.txt, yang mana file tersebut akan memiliki teks seperti:
+	Saya pernah bekerja pada beberapa perusahaan salah satu 
+	diantaranya ialah
+	- $PERUSAHAAN
+	- $PERUSAHAAN
+	- $PERUSAHAAN
+	  $PERUSAHAAN ⇒ diganti dengan nama perusahaan yang kamu sukai
+
+	=> touch portfolio.txt
+	=> nano portfolio.txt
+	   Saya pernah bekerja pada beberapa perusahaan salah satu diantaranya ialah
+
+		- Shopee
+		- Tokopedia
+		- Samsung
+		^X, Y 
+
+4. keluar dari folder sekolah
+   => cd ..
+
+5. masuk kedalam folder kerja
+   => cd D:/joyful/unixcommandline/arelia/kerja
+	- buat file dengan nama cv.txt, yang mana hal tersebut akan memiliki teks seperti:
+
+		Salam,
+
+		Perkenalkan namaku $NAMA, saya memiliki kegemaran
+		- $HOBBY
+		- $HOBBY
+		- $HOBBY
+		$NAMA ⇒ diganti dengan namamu sendiri
+		$HOBBY ⇒ diganti dengan hobi-mu sendiri
+
+		=> touch cv.txt
+		=> nano cv.txt
+
+		   Salam,
+
+		   Perkenalkan namaku Arelia, saya memiliki kegemaran
+		   - Membaca cerita
+		   - Mendengarkan musik
+		   - Memasak
+		   ^X, Y 
+		   
+	- tampilkan isi dari file tersebut menggunakan CLI command
+	  => cat cv.txt
+
+6. Pada tahap ini kamu lupa jika sebenarnya file portfolio.txt serahusnya tidak berada pada folder sekolah, jadi kamu harus memindahkannya ke dalam folder kerja
+   => mv portfolio.txt D:/joyful/unixcommandline/arelia/kerja
